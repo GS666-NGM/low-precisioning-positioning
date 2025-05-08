@@ -1,0 +1,15 @@
+navigation\queue.o: ..\Middle\FreeRTOS\source\queue.c
+navigation\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+navigation\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+navigation\queue.o: ../Middle/FreeRTOS/include/FreeRTOS.h
+navigation\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+navigation\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+navigation\queue.o: ../Core/Inc/FreeRTOSConfig.h
+navigation\queue.o: ../Middle/FreeRTOS/include/projdefs.h
+navigation\queue.o: ../Middle/FreeRTOS/include/portable.h
+navigation\queue.o: ../Middle/FreeRTOS/include/deprecated_definitions.h
+navigation\queue.o: ../Middle/FreeRTOS/portable/portmacro.h
+navigation\queue.o: ../Middle/FreeRTOS/include/mpu_wrappers.h
+navigation\queue.o: ../Middle/FreeRTOS/include/task.h
+navigation\queue.o: ../Middle/FreeRTOS/include/list.h
+navigation\queue.o: ../Middle/FreeRTOS/include/queue.h

@@ -1,0 +1,12 @@
+navigation\port.o: ..\Middle\FreeRTOS\portable\port.c
+navigation\port.o: ../Middle/FreeRTOS/include/FreeRTOS.h
+navigation\port.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+navigation\port.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+navigation\port.o: ../Core/Inc/FreeRTOSConfig.h
+navigation\port.o: ../Middle/FreeRTOS/include/projdefs.h
+navigation\port.o: ../Middle/FreeRTOS/include/portable.h
+navigation\port.o: ../Middle/FreeRTOS/include/deprecated_definitions.h
+navigation\port.o: ../Middle/FreeRTOS/portable/portmacro.h
+navigation\port.o: ../Middle/FreeRTOS/include/mpu_wrappers.h
+navigation\port.o: ../Middle/FreeRTOS/include/task.h
+navigation\port.o: ../Middle/FreeRTOS/include/list.h

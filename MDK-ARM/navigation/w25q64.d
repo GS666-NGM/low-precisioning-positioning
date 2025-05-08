@@ -1,0 +1,11 @@
+navigation\w25q64.o: ..\Hardware\W25Q64.c
+navigation\w25q64.o: D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+navigation\w25q64.o: .\RTE\_navigation\RTE_Components.h
+navigation\w25q64.o: ../Drivers/CMSIS/Include/core_cm3.h
+navigation\w25q64.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+navigation\w25q64.o: ../Drivers/CMSIS/Include/cmsis_version.h
+navigation\w25q64.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+navigation\w25q64.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+navigation\w25q64.o: D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
+navigation\w25q64.o: ..\Hardware\MySPI.h
+navigation\w25q64.o: ..\Hardware\W25Q64_Ins.h
