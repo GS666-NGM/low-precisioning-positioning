@@ -27,8 +27,8 @@ void Velocity(void)
 
 float turn_out;
 float target_turn;
-float kp_turn = -120;
-float ki_trun = -0.2;
+float kp_turn = -200;
+float ki_trun = -0.13;
 void Turn(void)
 {
     float bias;
@@ -40,10 +40,10 @@ void Turn(void)
     bias_integral += bias;
     
     //限幅
-    if(bias_integral>5000)
-        bias_integral = 5000;
-    else if(bias_integral < -5000)
-        bias_integral = -5000;
+    if(bias_integral>500)
+        bias_integral = 500;
+    else if(bias_integral < -500)
+        bias_integral = -500;
     //积分分离
     if(bias >= 10 || bias <= -10)
         bias_integral = 0;
@@ -72,6 +72,7 @@ float target_x, target_y;
 float kp_distance = 60;
 float ki_distance = 0.2;
 float biaslast = 1000;
+float biasdelta;
 uint8_t distanceflag;
 void Distance(void)
 {
@@ -93,12 +94,22 @@ void Distance(void)
         
         distance_out = bias*kp_distance + bias_integral*ki_distance;
         
-        if(bias <= 3 || biaslast-bias<-1 )
+        biasdelta = biaslast-bias;
+        if(bias <= 3)
         {
             distanceflag = 0;
             bias_integral = 0;
             distance_out = 0;
             biaslast = 1000;
+            return;
+        }
+        else if(biasdelta<-1 )
+        {
+            bias_integral = 0;
+            distance_out = 0;
+            biaslast = 1000;
+            target_turn = atan2(target_x-px, target_y-py)* 57.296;
+            distanceflag = 1;
             return;
         }
         biaslast = bias;

@@ -18,7 +18,7 @@ extern float target_x, target_y;
 extern uint8_t distanceflag;
 extern float ki_distance;
 extern float distance_out;
-extern float biaslast;
+extern float biasdelta;
 
 #endif
 

@@ -56,14 +56,14 @@ void rxdata_deal(void)
             {
                 case 0x01:
                 {
-                    target_velocity += 4;
+                    target_velocity += 9;
                     target_velocity>52 ? target_velocity=52 : 0;
                     break;
                     
                 }
                 case 0x02:
                 {
-                    target_velocity -= 4;
+                    target_velocity -= 9;
                     target_velocity<-52 ? target_velocity=-52 : 0;
                     break;
                 }
@@ -113,8 +113,7 @@ void rxdata_deal(void)
                 }
                 case 0xB0:
                 {
-//                    printf("%f   %f\r\n", px, py);
-//                    printf("%f", ki_distance);
+
                     break;
                 }
             }
